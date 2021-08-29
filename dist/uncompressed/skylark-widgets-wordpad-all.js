@@ -16069,7 +16069,7 @@ define('skylark-domx-contents/contents',[
     return skylark.attach("domx.contents",contents);
 
 });
-define('skylark-domx-contents/Hotkeys',[
+define('skylark-domx-contents/hotkeys',[
   "skylark-langx/langx",
   "skylark-domx-query",
   "./contents"
@@ -16287,7 +16287,7 @@ define('skylark-domx-contents/Hotkeys',[
 });
 
 
-define('skylark-domx-contents/Util',[
+define('skylark-domx-contents/util',[
   "skylark-langx/langx",
   "skylark-domx-query",
   "./contents"
@@ -16566,7 +16566,7 @@ define('skylark-domx-contents/Util',[
 
   return contents.Util = Util;
 });
-define('skylark-domx-contents/InputManager',[
+define('skylark-domx-contents/input-manager',[
   "skylark-langx/langx",
   "skylark-domx-query",
   "./contents"
@@ -16814,7 +16814,7 @@ define('skylark-domx-contents/InputManager',[
 
 });
 
-define('skylark-domx-contents/Selection',[
+define('skylark-domx-contents/selection',[
   "skylark-langx/langx",
   "skylark-domx-noder",
   "skylark-domx-query",
@@ -17264,7 +17264,7 @@ define('skylark-domx-contents/Selection',[
   return contents.Selection = Selection;
 
 });
-define('skylark-domx-contents/UndoManager',[
+define('skylark-domx-contents/undo-manager',[
   "skylark-langx/langx",
   "skylark-domx-query",
   "./contents"
@@ -17567,7 +17567,7 @@ define('skylark-domx-contents/UndoManager',[
   return contents.UndoManager = UndoManager;
 
 });
-define('skylark-domx-contents/Keystroke',[
+define('skylark-domx-contents/keystroke',[
   "skylark-langx/langx",
   "skylark-domx-query",
   "./contents"
@@ -17881,7 +17881,7 @@ define('skylark-domx-contents/Keystroke',[
 
 });
 
-define('skylark-domx-contents/Formatter',[
+define('skylark-domx-contents/formatter',[
   "skylark-langx/langx",
   "skylark-domx-query",
   "./contents"
@@ -18209,7 +18209,7 @@ define('skylark-domx-contents/Formatter',[
   return contents.Formatter = Formatter;
 
 });
-define('skylark-domx-contents/Indentation',[
+define('skylark-domx-contents/indentation',[
   "skylark-langx/langx",
   "skylark-domx-noder",
   "skylark-domx-query",
@@ -18413,7 +18413,7 @@ define('skylark-domx-contents/Indentation',[
 
 });
 
-define('skylark-domx-contents/Clipboard',[
+define('skylark-domx-contents/clipboard',[
   "skylark-langx/langx",
   "skylark-domx-query",
   "./contents"
@@ -18688,20 +18688,20 @@ define('skylark-domx-contents/Clipboard',[
 });
 
 
-define('skylark-domx-contents/Editable',[
+define('skylark-domx-contents/editable',[
 	"skylark-langx/langx",
 	"skylark-domx-noder",
 	"skylark-domx-query",
 	"./contents",
-	"./Hotkeys",
-	"./Util",
-	"./InputManager", 
-	"./Selection", 
-	"./UndoManager", 
-	"./Keystroke",
-	"./Formatter", 
-	"./Indentation", 
-	"./Clipboard"
+	"./hotkeys",
+	"./util",
+	"./input-manager", 
+	"./selection", 
+	"./undo-manager", 
+	"./keystroke",
+	"./formatter", 
+	"./indentation", 
+	"./clipboard"
 ],function(langx, noder, $, contents,Hotkeys,Util,InputManager,Selection,UndoManager,Keystroke,Formatter,Indentation,Clipboard){
   var Editable = langx.Evented.inherit({
     init : function(el,opts) {
@@ -27579,7 +27579,7 @@ define('skylark-widgets-wordpad/wordpad',[
   "skylark-langx/skylark",
   "skylark-langx/langx",
   "skylark-domx-query",
-  "skylark-domx-contents/Editable",
+  "skylark-domx-contents/editable",
   "skylark-widgets-base/widget",
   "skylark-widgets-toolbars/toolbar",
   "./uploader",

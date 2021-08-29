@@ -531,7 +531,7 @@ define('skylark-widgets-wordpad/wordpad',[
   "skylark-langx/skylark",
   "skylark-langx/langx",
   "skylark-domx-query",
-  "skylark-domx-contents/Editable",
+  "skylark-domx-contents/editable",
   "skylark-widgets-base/widget",
   "skylark-widgets-toolbars/toolbar",
   "./uploader",
