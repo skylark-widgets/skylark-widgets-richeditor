@@ -685,7 +685,7 @@ define('skylark-widgets-wordpad/wordpad',[
 
       });
 
-      this.toolbar.mount(this._elm);
+      this.toolbar.mount(this._elm,"prepend");
 
       
       if (this.options.placeholder) {
